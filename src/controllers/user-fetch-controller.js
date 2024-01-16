@@ -4,19 +4,6 @@ import { userFindWhereRepository } from "../repositories/user-find-where-reposit
 export function userFetchController(request, response) {
     const { name, age, gender } = request.query;
     
-    if( name ) {
-        // se é valido
-    }
-
-    if ( age ) {
-        // se é valido
-    }
-
-    if( gender) {
-        // se é valido
-    }
-
-
     const users = userFindWhereRepository({
         name, age, gender
     });
