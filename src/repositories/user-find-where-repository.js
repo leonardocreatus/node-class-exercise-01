@@ -1,6 +1,9 @@
 import users from "../database/index.js";
 
 
-export function userFindAllRepository() {
-    return users;
+export function userFindWhereRepository({ name, age, gender }) {
+    
+    return users.filter(user => {
+        
+    })
 }
