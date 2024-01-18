@@ -1,4 +1,4 @@
-import { userCreateRepository } from "../repositories/user-create-repository.js";
+import { userCreateRepository } from "../../repositories/user-create-repository.js";
 
 
 export function userCreateController(request, response) {

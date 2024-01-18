@@ -15,7 +15,7 @@ function includesInName(name, subs){
 export function userFindWhereRepository({ name, age, gender }) {
     
     return users.filter(user => {
-        
+
         // procura pela idade, genero ou nome desejado, se nao achar retorna true
         const matchAge = age ? user.age === Number(age) : true;
         const matchGender = gender ? user.gender === gender : true;
@@ -23,6 +23,13 @@ export function userFindWhereRepository({ name, age, gender }) {
 
         // retorna os parametros desejados na busca
         return matchAge && matchGender && matchName; 
+ 
+    }).map(user => {
+        return {
+            ...user,
+            password: undefined
+        }
+
     })
 
 
