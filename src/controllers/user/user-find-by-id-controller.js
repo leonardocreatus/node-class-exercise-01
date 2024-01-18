@@ -1,4 +1,4 @@
-import { userFindByIdRepository } from "../repositories/user-find-by-id-repository.js";
+import { userFindByIdRepository } from "../../repositories/user-find-by-id-repository.js";
 
 
 export function userFindbyIdController(request, response) {

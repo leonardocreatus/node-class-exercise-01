@@ -1,4 +1,4 @@
-import { userFindWhereRepository } from "../repositories/user-find-where-repository.js";
+import { userFindWhereRepository } from "../../repositories/user-find-where-repository.js";
 
 
 export function userFetchController(request, response) {

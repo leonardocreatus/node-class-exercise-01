@@ -9,5 +9,10 @@ export function userFindWhereRepository({ name, age, gender }) {
         const matchGender = gender ? user.gender === gender : true;
 
         return matchAge && matchGender; 
+    }).map(user => {
+        return {
+            ...user,
+            password: undefined
+        }
     })
 }
